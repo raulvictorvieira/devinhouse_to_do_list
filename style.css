@@ -8,6 +8,10 @@ body {
     background: #30F2F2;
 }
 
+header {
+    margin: 5px;
+    padding: 5px;
+}
 
 #box {
     background: #FFC857;
@@ -54,7 +58,7 @@ form {
     font-weight: bold;
 }
 
-.removed {
+.checked {
     text-decoration: line-through;
 }
 
@@ -101,4 +105,8 @@ footer a {
     text-decoration: none;
     color: #2A9D8F;
     font-weight: bold;
+}
+
+footer a:hover {
+    color: #E76F51;
 }

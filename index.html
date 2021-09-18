@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <title>To-Do List</title>
-</head>
-<body>
+  </head>
+  <body>
     <main id="box">
-        <header>
-            <h1>Lista de Afazeres</h1>
-        </header>
-        <form action="index.html">
-            <input type="text" id="addlist" placeholder="Digite uma tarefa...">
-            <button type="submit" id="addbutton">Adicionar</button>
-        </form>
-        <p class="alert"><img src="" alt="imagem de alerta"></p>
-        <div id="result">
-            <!-- <div>
-                <input type="checkbox" name="vehicle1" value="Bike">
-                <h3>
-                    Fazer bolo
-                </h3>
-                <button class="erasebutton" onclick="erase()"><i class="far fa-trash-alt"></i></button>
-            </div>
-            <div>
-                <input type="checkbox" name="vehicle1" value="Bike">
-                <h3>
-                    Fazer bolo de cenoura
-                </h3>
-                <button class="erasebutton" onclick="erase()"><i class="far fa-trash-alt"></i></button>
-            </div>
-            <div>
-                <input type="checkbox" name="vehicle1" value="Bike">
-                <h3>
-                    Estudar mais para fazer os projetos
-                </h3>
-                <button class="erasebutton" onclick="erase()"><i class="far fa-trash-alt"></i></button>
-            </div> -->
-        </div>
-        <footer>
-            <h6>Developed by <a href="https://github.com/raulvictorvieira" >Raul Victor Vieira</a></h6>
-        </footer>
+      <header>
+        <h1>Lista de Afazeres</h1>
+      </header>
+      <form action="index.html">
+        <input type="text" id="addlist" placeholder="Digite uma tarefa..." />
+        <button type="submit" id="addbutton">Adicionar</button>
+      </form>
+      <p class="alert"></p>
+      <div id="result"></div>
+      <footer>
+        <h6>
+          Developed by
+          <a href="https://github.com/raulvictorvieira" target="_blank"
+            >Raul Victor Vieira</a
+          >
+        </h6>
+      </footer>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
