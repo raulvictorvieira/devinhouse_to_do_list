@@ -5,15 +5,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #89C6A1;
+    background: #30F2F2;
 }
 
 
 #box {
     background: #FFC857;
     width: 600px;
-    border: 2px solid #323031;
-    border-radius: 15px;
+    /*border: 2px solid #323031;*/
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 50px auto;
     padding: 15px;
     display: flex;
@@ -28,28 +29,76 @@ form {
 #addbutton {
     background: #323031;
     color: white;
-    border: 1px solid white;
+    border: none;
     border-radius: 5px;
     padding: 5px;
 }
 
 #addbutton:hover {
-    background: #DB3A34 ;
-    border: 1px solid #323031;
+    background: #91F291 ;
     color: white;
+    cursor: pointer;
 }
 
 #addlist {
-    border: 1px solid #323031;
+    border: none;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
 }
 
 .alert {
     display: none;
-    background: rgb(189, 66, 66);
+    background: #F2542D;
     border-radius: 5px;
     padding: 3px;
     font-weight: bold;
 }
 
+.removed {
+    text-decoration: line-through;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 20px;
+}
+
+#result div {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#result div input {
+    margin-right: 10px;
+}
+
+#result div button {
+    margin-left: 10px;
+}
+
+.erasebutton {
+    background: #323031;
+    color: #E76F51;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.erasebutton:hover {
+    background: #E76F51;
+    color: #323031;
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2A9D8F;
+    font-weight: bold;
+}
