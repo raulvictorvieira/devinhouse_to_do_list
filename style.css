@@ -60,6 +60,7 @@ form {
 
 .checked {
     text-decoration: line-through;
+    opacity: 40%;
 }
 
 #result {

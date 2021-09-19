@@ -23,11 +23,11 @@ function showLists(clearList = false) {
         //utilizar o loop forEach para imprimir as listas
         listArr.forEach((items) => {
             result.innerHTML += `<div>
-            <input type="checkbox" onclick:"done()">
+            <input type="checkbox" id="check" onclick="done(${listArr.indexOf(items)}, 'false')">
             <h3>
                 ${items}
             </h3>
-            <button class="erasebutton" onclick="erase() value="${listArr.indexOf(items)}"><i class="far fa-trash-alt"></i></button>
+            <button class="erasebutton" onclick="erase(${listArr.indexOf(items)})"><i class="far fa-trash-alt"></i></button>
         </div>`
         });
     } else {
@@ -36,13 +36,20 @@ function showLists(clearList = false) {
 
 }
 
-//function done(event) {
-//    const index = event.target.id;
-//    console.log(index);
-//}
+//marcar a tarefa como feito
+function done(index, condition) {
+    tarefa = document.getElementsByTagName('h3')[index];
+    check = document.querySelector('#check');
+    if(condition = false){
+        tarefa.setAttribute('class', 'checked');
+        check.setAttribute('onclick', 'done(${listArr.indexOf(items)}, true)');
+    }else{
+        tarefa.style = 'text-decoration: none; opacity: 100%;';
+    }
+}
 
-function erase() {
-   const index = document.event.target.value;
+//excluir tarefa selecionada
+function erase(index) {
     listArr.splice(index, 1);
     saveItemsToLocaleStorage(listArr);
     showLists(true);
