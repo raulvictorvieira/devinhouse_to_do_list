@@ -41,12 +41,12 @@ function showLists(clearList = false) {
 //    console.log(index);
 //}
 
-//function erase(event) {
- //   const index = event.target.value;
-//    listArr.splice(index, 1);
-//    saveItemsToLocaleStorage(listArr);
-//    showLists(true);
-//}
+function erase() {
+   const index = document.event.target.value;
+    listArr.splice(index, 1);
+    saveItemsToLocaleStorage(listArr);
+    showLists(true);
+}
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
