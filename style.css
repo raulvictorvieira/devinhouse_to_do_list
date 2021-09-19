@@ -80,6 +80,11 @@ form {
     justify-content: space-between;
 }
 
+#result div:hover {
+    background: #91F291;
+    color: white;
+}
+
 #result div input {
     margin-right: 10px;
 }

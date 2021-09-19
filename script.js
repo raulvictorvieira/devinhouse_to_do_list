@@ -23,7 +23,7 @@ function showLists(clearList = false) {
         //utilizar o loop forEach para imprimir as listas
         listArr.forEach((items) => {
             result.innerHTML += `<div>
-            <input type="checkbox" id="check" onclick="done(${listArr.indexOf(items)}, 0)">
+            <input type="checkbox" id="check-${listArr.indexOf(items)}" onclick="done(${listArr.indexOf(items)}, 0)">
             <h3>
                 ${items}
             </h3>
@@ -39,7 +39,7 @@ function showLists(clearList = false) {
 //marcar a tarefa como feito
 function done(index, condition) {
     const tarefa = document.getElementsByTagName('h3')[index];
-    const check = document.querySelector('input#check');
+    const check = document.querySelector(`input#check-${index}`);
     switch (condition) {
         case 0:
             tarefa.style = 'text-decoration: line-through; opacity: 40%;';
