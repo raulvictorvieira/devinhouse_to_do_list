@@ -4,7 +4,7 @@ Projeto realizado em HTML, CSS e JavaScript para avaliação do DEVinHouse. Os r
 
 ## Ferramentas utilizadas no projeto
 
-- HTM
+- HTML
 - CSS
 - JavaScript
 
